@@ -180,4 +180,11 @@ to {
 opacity: 1;
 transform: translateY(0);
 }
+.contact-section p {
+display: flex; /* wiersz z ikoną + tekstem */
+align-items: center; /* wyrównanie pionowe ikon i tekstu */
+gap: 8px; /* odstęp między ikoną a linkiem */
+margin: 5px 0; /* minimalny odstęp między wierszami */
+font-size: 16px; /* dopasowanie rozmiaru tekstu */
+}
 }
