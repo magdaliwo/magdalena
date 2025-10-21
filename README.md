@@ -1,2 +1,91 @@
-# Magdalena - Projects & Portfolio
-Projects, Experiments, Achievements 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magdalena – Projects & Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+<header>
+<div class="container header-container">
+<h1>Magdalena</h1>
+<p>Showcasing My Work & Projects</p>
+<div class="links">
+<a href="mailto:youremail@example.com">Email</a>
+<a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+<a href="https://github.com/yourusername" target="_blank">GitHub</a>
+</div>
+</div>
+</header>
+
+<!-- Projects Section -->
+<section id="projects">
+<div class="container">
+<h2>Projects</h2>
+
+<!-- Example Project 1 -->
+<div class="project fade-in">
+<div class="project-info">
+<h3>Project Name 1</h3>
+<span class="date">2025</span>
+<p>Short description of this project, outcome, etc.</p>
+<div class="technologies">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+</div>
+<a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+</div>
+</div>
+
+<!-- Example Project 2 -->
+<div class="project fade-in">
+<div class="project-info">
+<h3>Project Name 2</h3>
+<span class="date">2024</span>
+<p>Short description of this project, outcome, etc.</p>
+<div class="technologies">
+<span>React</span>
+<span>CSS</span>
+<span>Figma</span>
+</div>
+<a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+</div>
+</div>
+
+<!-- Add more projects by copying the same block -->
+</div>
+</section>
+
+<!-- Footer / Contact -->
+<footer>
+<div class="container">
+<p>Contact me: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+<p>&copy; 2025 Magdalena</p>
+</div>
+</footer>
+
+<!-- Scroll Animation Script -->
+<script>
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = {
+threshold: 0.2,
+rootMargin: "0px 0px -50px 0px"
+};
+const appearOnScroll = new IntersectionObserver(function(entries, observer){
+entries.forEach(entry => {
+if(!entry.isIntersecting) return;
+entry.target.classList.add('appear');
+observer.unobserve(entry.target);
+});
+}, appearOptions);
+
+faders.forEach(fader => {
+appearOnScroll.observe(fader);
+});
+</script>
+</body>
+</html>
