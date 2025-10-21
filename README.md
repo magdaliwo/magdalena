@@ -1,2 +1,2 @@
-# Magdalena
-My virtual profile 
+# Magdalena - Projects & Portfolio
+Projects, Experiments, Achievements 
