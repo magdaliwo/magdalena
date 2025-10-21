@@ -187,5 +187,14 @@ gap: 8px;
 margin: 5px 0; 
 font-size: 16px; 
 }
+.contact-section svg {
+display: inline-block;
+vertical-align: middle; 
+width: 24px; 
+height: 24px; 
+stroke-width: 2; 
+color: #0A66C2; 
 }
+}
+
 
